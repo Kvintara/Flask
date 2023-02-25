@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Game</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+    {% extends "base.html" %} {% block content %}
+    <h1 align="center">Mano žaisti ir kai kurie vis dar žaidžiami video žaidimai</h1>
+    <br><br> {% for data_game_l2 in data %}
+    <h2 align="center">{{ data_game_l2['pavadinimas'] }}</h2>
+    <!-- <image align="center">{{ data_game_l2['screnai'] }}</image> -->
+    <h3>{{ data_game_l2['paragrafas'] }}</h3>
+    <hr>
+    <p>{{ data_game_l2['tekstas'] }}</p>
+    <hr> {% endfor %}
+    <h2>Screen</h2>
+    <!-- <img src="{{ url_for('static', filename='/screnai_l2/lineage2.png') }}" /> -->
+    <img src="{{ url_for('static', filename='/screnai_l2/lineage2_char.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_l2/lineage2_giran.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_l2/lineage2_cc.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_l2/lineage2_fight.png') }}" />
+    <h2>Video</h2>
+    <iframe src="https://www.youtube.com/watch?v=5Ni6g8rpumk&t=57s" width="1160" height="660" frameborder="0" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/watch?v=p2iOwhQ8rwk" width="1160" height="660" frameborder="0" allowfullscreen></iframe> {% endblock %}
+</body>
+
+</html>

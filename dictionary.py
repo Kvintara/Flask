@@ -508,7 +508,7 @@ data_game_totalwar = [{
     {
     'paragrafas': 'Main games',
     'tekstas': 'Release timeline. Shogun: Total War - 2000, Medieval: Total War – 2002, Rome: Total War – 2004, Medieval II: Total War – 2006, Empire: Total War – 2009, \
-        Napoleon: Total War – 2010, Total War: Shogun 2 – 2011, Total War: Rome II – 2013, Total War: Attila – 2015, Total War: Warhammer – 2016, Total War: Warhammer II – 2017, \
+        Napoleon: Total War - 2010, Total War: Shogun 2 – 2011, Total War: Rome II – 2013, Total War: Attila – 2015, Total War: Warhammer – 2016, Total War: Warhammer II – 2017, \
         Total War Saga: Thrones of Britannia – 2018, Total War: Three Kingdoms – 2019, Total War Saga: Troy – 2020.'
 },
     {

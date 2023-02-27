@@ -1,7 +1,7 @@
 
 
 from flask import Flask, render_template, request, redirect, url_for, flash
-from dictionary import data_game_l2
+from dictionary import data_game_l2, data_game_wow, data_game_totalwar
 app = Flask(__name__)
 
 
@@ -13,7 +13,7 @@ def index():
 
 @app.route("/<string:title>")
 def game(title):
-    return render_template("game.html", title=title, data=data_game_l2)
+    return render_template("game.html", title=title, data=[data_game_l2, data_game_wow, data_game_totalwar])
 
 
 @app.route("/music")

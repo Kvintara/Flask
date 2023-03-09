@@ -6,13 +6,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>title</title>
+    <title>Book</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 </head>
 
 <body>
+    {% extends "base.html" %} {% block content %}
+    <h1 align="center">
+        Serija knygų kurias bandau surinkti ir perskaityti
+    </h1>
+    <br /><br /> {% for data_book_pfaf1 in data_12 %}
+    <h2 align="center">{{ data_book_pfaf1['pavadinimas'] }}</h2>
+    <h3>{{ data_book_pfaf1['autorius'] }}</h3>
+    <hr />
+    <p>{{ data_book_pfaf1['tekstas'] }}</p>
+    <hr /> {% endfor %}
+    <img src="{{ url_for('static', filename='/screnai_knygos/cover/k1.png') }}" />
+    <br /><br /> {% for data_book_pfaf2 in data_13 %}
+    <h2 align="center">{{ data_book_pfaf2['pavadinimas'] }}</h2>
+    <h3>{{ data_book_pfaf2['autorius'] }}</h3>
+    <hr />
+    <p>{{ data_book_pfaf2['tekstas'] }}</p>
+    <hr /> {% endfor %}
+    <img src="{{ url_for('static', filename='/screnai_knygos/cover/k2.png') }}" />
+    <br /><br /> {% for data_book_pfaf3 in data_14 %}
+    <h2 align="center">{{ data_book_pfaf3['pavadinimas'] }}</h2>
+    <h3>{{ data_book_pfaf3['autorius'] }}</h3>
+    <hr />
+    <p>{{ data_book_pfaf3['tekstas'] }}</p>
+    <hr /> {% endfor %}
+    <img src="{{ url_for('static', filename='/screnai_knygos/cover/k3.png') }}" />
+    <br /><br /> {% for data_book_pfaf4 in data_15 %}
+    <h2 align="center">{{ data_book_pfaf4['pavadinimas'] }}</h2>
+    <h3>{{ data_book_pfaf4['autorius'] }}</h3>
+    <hr />
+    <p>{{ data_book_pfaf4['tekstas'] }}</p>
+    <hr /> {% endfor %}
+    <img src="{{ url_for('static', filename='/screnai_knygos/cover/k4.png') }}" />
+    <br /><br /> {% for data_book_pfaf5 in data_16 %}
+    <h2 align="center">{{ data_book_pfaf5['pavadinimas'] }}</h2>
+    <h3>{{ data_book_pfaf5['autorius'] }}</h3>
+    <hr />
+    <p>{{ data_book_pfaf5['tekstas'] }}</p>
+    <hr /> {% endfor %}
+    <img src="{{ url_for('static', filename='/screnai_knygos/cover/k5.png') }}" />
+    <br /><br /> {% for data_book_pfaf6 in data_17 %}
+    <h2 align="center">{{ data_book_pfaf6['pavadinimas'] }}</h2>
+    <h3>{{ data_book_pfaf6['autorius'] }}</h3>
+    <hr />
+    <p>{{ data_book_pfaf6['tekstas'] }}</p>
+    <hr /> {% endfor %}
+    <img src="{{ url_for('static', filename='/screnai_knygos/cover/k6.png') }}" />
+    <br /><br /> {% for data_book_pfaf7 in data_18 %}
+    <h2 align="center">{{ data_book_pfaf7['pavadinimas'] }}</h2>
+    <h3>{{ data_book_pfaf7['autorius'] }}</h3>
+    <hr />
+    <p>{{ data_book_pfaf7['tekstas'] }}</p>
+    <hr /> {% endfor %}
+    <img src="{{ url_for('static', filename='/screnai_knygos/cover/k7.png') }}" />
+    <br /><br /> {% for data_book_pfaf8 in data_19 %}
+    <h2 align="center">{{ data_book_pfaf8['pavadinimas'] }}</h2>
+    <h3>{{ data_book_pfaf8['autorius'] }}</h3>
+    <hr />
+    <p>{{ data_book_pfaf8['tekstas'] }}</p>
+    <hr /> {% endfor %}
+    <img src="{{ url_for('static', filename='/screnai_knygos/cover/k8.png') }}" />
+    <br /><br /> {% for data_book_pfaf9 in data_20 %}
+    <h2 align="center">{{ data_book_pfaf9['pavadinimas'] }}</h2>
+    <h3>{{ data_book_pfaf9['autorius'] }}</h3>
+    <hr />
+    <p>{{ data_book_pfaf9['tekstas'] }}</p>
+    <hr /> {% endfor %}
+    <img src="{{ url_for('static', filename='/screnai_knygos/cover/k9.png') }}" />
+    <br /><br /> {% for data_book_pfaf10 in data_21 %}
+    <h2 align="center">{{ data_book_pfaf10['pavadinimas'] }}</h2>
+    <h3>{{ data_book_pfaf10['autorius'] }}</h3>
+    <hr />
+    <p>{{ data_book_pfaf10['tekstas'] }}</p>
+    <hr /> {% endfor %}
+    <img src="{{ url_for('static', filename='/screnai_knygos/cover/k10.png') }}" />
+    <h2 align="center">
+        Visos serijos sąrašas
+    </h2>
     <table border="1" cellpadding="0">
         <thead>
             <tr>
@@ -17832,6 +17909,7 @@
             </tr>
         </tbody>
     </table>
+    {% endblock %}
 </body>
 
 </html>

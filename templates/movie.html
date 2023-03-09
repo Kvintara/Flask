@@ -6,14 +6,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>title</title>
+    <title>Movie</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 </head>
 
 <body>
-
+    {% extends "base.html" %} {% block content %}
+    <h1 align="center">
+        Pateiksiu pora žiūretų filmų (veliau turetu kiekis dideti)
+    </h1>
+    <img src="{{ url_for('static', filename='/screnai_uw/uw1/uw1.png') }}" />
+    <br /><br /> {% for data_movie_uw in data_4 %}
+    <h2 align="center">{{ data_movie_uw['pavadinimas'] }}</h2>
+    <h3>{{ data_movie_uw['paragrafas'] }}</h3>
+    <hr />
+    <p>{{ data_movie_uw['tekstas'] }}</p>
+    <hr /> {% endfor %}
+    <img src="{{ url_for('static', filename='/screnai_uw/uw1/uw2.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_uw/uw1/uw3.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_uw/uw1/uw4.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_uw/uw1/uw5.png') }}" />
+    <br><img src="{{ url_for('static', filename='/screnai_uw/uw2/uw6.png') }}" />
+    <br /><br /> {% for data_movie_uw_e in data_5 %}
+    <h2 align="center">{{ data_movie_uw_e['pavadinimas'] }}</h2>
+    <h3>{{ data_movie_uw_e['paragrafas'] }}</h3>
+    <hr />
+    <p>{{ data_movie_uw_e['tekstas'] }}</p>
+    <hr /> {% endfor %}
+    <img src="{{ url_for('static', filename='/screnai_uw/uw2/uw7.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_uw/uw2/uw8.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_uw/uw2/uw9.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_uw/uw2/uw10.png') }}" />
+    <br><img src="{{ url_for('static', filename='/screnai_uw/uw3/uw11.png') }}" />
+    <br /><br /> {% for data_movie_uw_rotl in data_6 %}
+    <h2 align="center">{{ data_movie_uw_rotl['pavadinimas'] }}</h2>
+    <h3>{{ data_movie_uw_rotl['paragrafas'] }}</h3>
+    <hr />
+    <p>{{ data_movie_uw_rotl['tekstas'] }}</p>
+    <hr /> {% endfor %}
+    <img src="{{ url_for('static', filename='/screnai_uw/uw3/uw12.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_uw/uw3/uw13.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_uw/uw3/uw14.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_uw/uw3/uw15.png') }}" />
+    <br><img src="{{ url_for('static', filename='/screnai_uw/uw4/uw16.png') }}" />
+    <br /><br /> {% for data_movie_uw_a in data_7 %}
+    <h2 align="center">{{ data_movie_uw_a['pavadinimas'] }}</h2>
+    <h3>{{ data_movie_uw_a['paragrafas'] }}</h3>
+    <hr />
+    <p>{{ data_movie_uw_a['tekstas'] }}</p>
+    <hr /> {% endfor %}
+    <img src="{{ url_for('static', filename='/screnai_uw/uw4/uw17.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_uw/uw4/uw18.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_uw/uw4/uw19.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_uw/uw4/uw20.png') }}" />
+    <br><img src="{{ url_for('static', filename='/screnai_uw/uw5/uw21.png') }}" />
+    <br /><br /> {% for data_movie_uw_bw in data_8 %}
+    <h2 align="center">{{ data_movie_uw_bw['pavadinimas'] }}</h2>
+    <h3>{{ data_movie_uw_bw['paragrafas'] }}</h3>
+    <hr />
+    <p>{{ data_movie_uw_bw['tekstas'] }}</p>
+    <hr /> {% endfor %}
+    <img src="{{ url_for('static', filename='/screnai_uw/uw5/uw22.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_uw/uw5/uw23.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_uw/uw5/uw24.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_uw/uw5/uw25.png') }}" /> {% endblock %}
 </body>
 
 </html>

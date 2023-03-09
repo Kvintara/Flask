@@ -6,14 +6,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>title</title>
+    <title>Music</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 </head>
 
 <body>
-
+    {% extends "base.html" %} {% block content %}
+    <h1 align="center">
+        Pateiksiu pora patinkančių muzikos grupių / dainininkų (veliau turetu kiekis dideti)
+    </h1>
+    <img src="{{ url_for('static', filename='/screnai_nirv/nir2.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_nirv/nir5.png') }}" />
+    <br /><br /> {% for data_music_nirvana in data_9 %}
+    <h2 align="center">{{ data_music_nirvana['pavadinimas'] }}</h2>
+    <h3>{{ data_music_nirvana['paragrafas'] }}</h3>
+    <hr />
+    <p>{{ data_music_nirvana['tekstas'] }}</p>
+    <hr /> {% endfor %}
+    <h2>Albumų viršeliai</h2>
+    <img src="{{ url_for('static', filename='/screnai_nirv/album_cover/cov1.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_nirv/album_cover/cov2.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_nirv/album_cover/cov3.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_nirv/album_cover/cov4.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_nirv/album_cover/cov5.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_nirv/album_cover/cov6.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_nirv/album_cover/cov7.png') }}" />
+    <h2>AM+Foje</h2>
+    <img src="{{ url_for('static', filename='/screnai_am_foje/foje1.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_am_foje/foje4.png') }}" />
+    <br /><br /> {% for data_music_am_foje in data_10 %}
+    <h2 align="center">{{ data_music_am_foje['pavadinimas'] }}</h2>
+    <h3>{{ data_music_am_foje['paragrafas'] }}</h3>
+    <hr />
+    <p>{{ data_music_am_foje['tekstas'] }}</p>
+    <hr /> {% endfor %}
+    <h2>Albumų viršeliai</h2>
+    <img src="{{ url_for('static', filename='/screnai_am_foje/album_cover/fo1.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_am_foje/album_cover/fo2.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_am_foje/album_cover/fo3.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_am_foje/album_cover/fo4.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_am_foje/album_cover/fo5.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_am_foje/album_cover/fo6.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_am_foje/album_cover/fo7.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_am_foje/album_cover/fo8.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_am_foje/album_cover/fo9.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_am_foje/album_cover/fo10.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_am_foje/album_cover/fo11.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_am_foje/album_cover/fo12.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_am_foje/album_cover/fo13.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_am_foje/album_cover/fo14.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_am_foje/album_cover/fo15.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_am_foje/album_cover/fo16.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_am_foje/album_cover/am1.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_am_foje/album_cover/am2.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_am_foje/album_cover/am3.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_am_foje/album_cover/am4.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_am_foje/album_cover/am5.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_am_foje/album_cover/am6.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_am_foje/album_cover/am7.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_am_foje/album_cover/am8.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_am_foje/album_cover/am9.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_am_foje/album_cover/am10.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_am_foje/album_cover/am11.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_am_foje/album_cover/am12.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_am_foje/album_cover/am13.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_am_foje/album_cover/am14.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_am_foje/album_cover/am15.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_am_foje/album_cover/am16.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_am_foje/album_cover/am17.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_am_foje/album_cover/am18.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_am_foje/album_cover/am19.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_am_foje/album_cover/am20.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_am_foje/album_cover/am21.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_am_foje/album_cover/am22.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_am_foje/album_cover/am23.png') }}" />
+    <h2>BabyMetal</h2>
+    <img src="{{ url_for('static', filename='/screnai_bm/bm1.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_bm/bm2.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_bm/bm4.png') }}" />
+    <br /><br /> {% for data_music_bm in data_11 %}
+    <h2 align="center">{{ data_music_bm['pavadinimas'] }}</h2>
+    <h3>{{ data_music_bm['paragrafas'] }}</h3>
+    <hr />
+    <p>{{ data_music_bm['tekstas'] }}</p>
+    <hr /> {% endfor %}
+    <h2>Albumų viršeliai</h2>
+    <img src="{{ url_for('static', filename='/screnai_bm/cover/bm1.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_bm/cover/bm2.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_bm/cover/bm3.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_bm/cover/bm4.png') }}" /> {% endblock %}
 </body>
 
 </html>

@@ -1,7 +1,7 @@
 
+
 data_game_l2 = [{
     'pavadinimas': 'Lineage II',
-    #! 'screnai': 'C:/Users/kvint/Desktop/python/Savarnkiski/bandom/static/screnai_l2lineage2.png',
     'paragrafas': 'Lineage II',
     'tekstas': 'Is a massively multiplayer online role-playing game (MMORPG) for Microsoft Windows and the second game in the Lineage series.It is a prequel to Lineage and is set 150 \
         years before the first game. It has become popular since its October 1, 2003 launch in South Korea, reporting 1,000,918 unique users during the month of March 2007. To date, \
@@ -1732,71 +1732,79 @@ data_music_bm = [{
         Babymetal World Tour 2018 (2018), Metal Galaxy World Tour (2019-2020).'
 }]
 
-data_book_pfaf = [{
+data_book_pfaf1 = [{
     'pavadinimas': 'Užslinks naktis (PFAF1)',
     'autorius': 'Pasaulinės fantastikos aukso fondas',
     'tekstas': 'Amerikiečių fantastikos rinkinys Užslinks naktis tai: paskutinės žūstančios civilizacijos valandos, meilė XXIV amžiuje, velniški burtai prakeiktame mieste, ginklas, \
         sunaikinęs protingas būtybes Marse, krikščionybės likimas Galaktikos užkampyje.'
-},
-    {
+}]
+
+data_book_pfaf2 = [{
     'pavadinimas': 'Kaukų draustinis (PFAF2)',
     'autorius': 'Klifordas Donaldas Saimekas',
     'tekstas': '„Kaukų draustinis“ nukelia skaitytoją į tolimą ateitį. Išsprendę esmines civilizacijos problemas ir gerai apieškoję Žemę, žmonės aptiko daugybę mitinių būtybių: kaukų, \
         trolių, laumių, gnomų ir kitų. Gyventi kartu pasirodė netgi labai nelengva.'
-},
-    {
+}]
+
+data_book_pfaf3 = [{
     'pavadinimas': 'Pragaištingas krėslas (PFAF 3)',
     'autorius': 'Pasaulinės fantastikos aukso fondas',
     'tekstas': '„Staiga kažkas nutrūko, ir aš supratau esąs kitame kūne. Iš tiesų - stoviu, bet ne savo kojomis, matau, bet ne savo akimis, girdžiu, bet ne savo ausimis. Jis priešinosi, \
         kaip beprotis, ypač kai bandžiau pasisavinti smegenis, bet aš nugalėjau.“.'
-},
-    {
+}]
+
+data_book_pfaf4 = [{
     'pavadinimas': 'Raganų pasaulis (PFAF 4)',
     'autorius': 'Andre Norton',
     'tekstas': 'Pulkininkas Saimonas Tregartas pateko galingų nusikaltėlių nemalonėn. Jam teliko gyventi viena, na gal dvi dienos. Padėtis beviltiška, nebent... nebent jis pasinaudotų \
         Pragaištingojo Akmens galia ir atsidurtų alternatyviame pasaulyje, kur galioja kiti gamtos dėsniai, kur burtai bei magija - įprasti, nieko nestebinantys reiškiniai. Bet tuomet \
         jau nebebus kelio atgal, nes jį priglobs, jo likimą amžiams lems raganų pasaulis.'
-},
-    {
+}]
+
+data_book_pfaf5 = [{
     'pavadinimas': 'Kryžiaus žygis į dausas (PFAF 5)',
     'autorius': 'Poul Anderson',
     'tekstas': 'Ateiviai, atskridę Žemėn, regi melsvai žalią planetą, kurioje gyvena primityvūs dvikojai padarai. Pavienės pilys, kaimai, išsibarstę viduramžių Anglijos \
         tyrlaukiuose, - pasaulis prašyte prašosi, kad jį užgrobtų. Čiabuviai regi - velnius! Žinia, kaimiečiai prietaringi, jų ginklai prasti, bet užtat jie moka kovoti su piktosiomis \
         dvasiomis. Ir geriausias būdas sudoroti šias pragaro išperas - tai surengti Kryžiaus Žygį į Dausas.'
-},
-    {
+}]
+
+data_book_pfaf6 = [{
     'pavadinimas': 'Kalavijų rikis (PFAF 6)',
     'autorius': 'Michael Moorock',
     'tekstas': 'Neatmenamais laikais, kai Žemėje putojo šviesos vandenynai, kai danguje skraidė bronzos paukščiai, kai aukštesni už pilis maurojo raudoni galvijai, kai juodose upėse \
         nardė smaragdo būtybės, kai atsirado Žmogus, baimės vergas, sėjęs ne tik mirtį, bet ir baimę, - tuomet, siaučiant tamsiosioms jėgom, šėlstant bemintėm dvasiom, buvo parašyta \
         ši kronika, bylojanti apie vanagų princo Korumo Dailino Irsio klajones bei stebuklingus nuotykius priešistorinėje Žemėje ir Penkiuose Matmenyse.'
-},
-    {
+}]
+
+data_book_pfaf7 = [{
     'pavadinimas': 'Raganų pasaulio voratinklis (PFAF 7)',
     'autorius': 'Andre Norton',
     'tekstas': 'Saimonas Tregartas, Žemės žmogus, atsidūręs Raganų pasaulyje, patenka į patį ten siaučiančio karo sūkurį. Saimonas žino, kad jis su savo burtininke žmona neturės ramybės \
         tol, kol nesuras grobikų kolderų irštvos, kol neaptiks Vartų, pro kuriuos it maras plūsta nežemiškos civilizacijos pabaisos. Tačiau klastingas priešas nesnaudžia: pamažu, bet \
         atkakliai jis rezga Raganų Pasaulio Voratinklį.'
-},
-    {
+}]
+
+data_book_pfaf8 = [{
     'pavadinimas': 'Trys širdys ir trys liūtai (PFAF 8)',
     'autorius': 'Poul Anderson',
     'tekstas': 'Taiklus šūvis mūšyje - ir Holgeris Karlsenas atsiduria Viduriniame Pasaulyje, burtų bei magijos karalystėje, kur taip pat tvenkiasi lemtingojo žmonijai karo debesys. \
         Fėja Morgana, kiti Stebuklų šalies gyventojai verčia Holgerį tarnauti Chaoso, jau prisijaukinusio trolius, milžinus žmogėdras ir vilkolakius, ordoms. Mergelė gulbė įkalbinėja jį \
         ginti žmoniją. Iš pradžių, neigdamas Vidurio Pasaulio realumą, Holgeris trokšta kuo greičiau grįžti Žemėn, tačiau netrukus suvokia, jog būtent šioje ugnimi spjaudančių drakonų, \
         aistringų undinių šalyje jis privalo kovoti arba mirti.'
-},
-    {
+}]
+
+data_book_pfaf9 = [{
     'pavadinimas': 'Vilkolakio principas (PFAF 9)',
     'autorius': 'Clifford D. Simak',
     'tekstas': 'Endrių Bleiką, surastą užšaldytą kapsulėje tolimoje planetoje, parveža į Žemę. Jam - per 200 metų, masto ir elgiasi jis kaip žmogus. Tačiau netrukus suvokia, kad jo \
         smegenyse gyvena dvi būtybės - keistas biologinis kompiuteris ir vilką primenantis padaras. Pastarajam užvaldžius kūną, Bleikas pabėga iš ligoninės, kad pagaliau atskleistų \
         savo praeities paslaptis.'
-},
-    {
+}]
+
+data_book_pfaf10 = [{
     'pavadinimas': 'Balsas Tyruose (PFAF 10)',
     'autorius': 'Pasaulinės fantastikos aukso fondas',
     'tekstas': 'Anglijos ir JAV rašytojų moksliniai fantastiniai kūriniai: E.F. Russell „Balsas tyruose“, R.F. Young „Nukirsk medį“, R. Silverberg „Verslas“, R. Bradbury „Speigas ir \
         liepsna“, Ph.K. Dick „Antrasis modelis“..'
-
 }]

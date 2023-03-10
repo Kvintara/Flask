@@ -16,30 +16,44 @@
     <h1 align="center">
         Mano žaisti ir kai kurie vis dar žaidžiami video žaidimai
     </h1>
-    <br /><br /> {% for data_game_l2 in data %}
+    <img src="{{ url_for('static', filename='/screnai_l2/lineage2.png') }}" />
+    <br /><br /> {% for data_game_l2 in data_1 %}
     <h2 align="center">{{ data_game_l2['pavadinimas'] }}</h2>
     <h3>{{ data_game_l2['paragrafas'] }}</h3>
     <hr />
     <p>{{ data_game_l2['tekstas'] }}</p>
     <hr /> {% endfor %}
-    <!-- <h2>Screen</h2> -->
-    <!-- <img src="{{ url_for('static', filename='/screnai_l2/lineage2.png') }}" />
+    <h2>Screen</h2>
     <img src="{{ url_for('static', filename='/screnai_l2/lineage2_char.png') }}" />
     <img src="{{ url_for('static', filename='/screnai_l2/lineage2_giran.png') }}" />
     <img src="{{ url_for('static', filename='/screnai_l2/lineage2_cc.png') }}" />
-    <img src="{{ url_for('static', filename='/screnai_l2/lineage2_fight.png') }}" /> -->
-    <br /><br /> {% for data_game_wow in data %}
+    <img src="{{ url_for('static', filename='/screnai_l2/lineage2_fight.png') }}" />
+    <h1>WOW</h1>
+    <img src="{{ url_for('static', filename='/screnai_wow/wow.png') }}" />
+    <br /><br /> {% for data_game_wow in data_2 %}
     <h2 align="center">{{ data_game_wow['pavadinimas'] }}</h2>
     <h3>{{ data_game_wow['paragrafas'] }}</h3>
     <hr />
     <p>{{ data_game_wow['tekstas'] }}</p>
     <hr /> {% endfor %}
-    <br /><br /> {% for data_game_totalwar in data %}
+    <h2>Screen</h2>
+    <img src="{{ url_for('static', filename='/screnai_wow/wow_2.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_wow/wow_litch.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_wow/wow_maunt.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_wow/wow_undead.png') }}" />
+    <h1>TW</h1>
+    <img src="{{ url_for('static', filename='/screnai_tw/totalwar.png') }}" />
+    <br /><br /> {% for data_game_totalwar in data_3 %}
     <h2 align="center">{{ data_game_totalwar['pavadinimas'] }}</h2>
     <h3>{{ data_game_totalwar['paragrafas'] }}</h3>
     <hr />
     <p>{{ data_game_totalwar['tekstas'] }}</p>
-    <hr /> {% endfor %}{% endblock %}
+    <hr /> {% endfor %}
+    <h2>Screen</h2>
+    <img src="{{ url_for('static', filename='/screnai_tw/totalwar_army.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_tw/totalwar_map.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_tw/totalwar_rome.png') }}" />
+    <img src="{{ url_for('static', filename='/screnai_tw/totalwar_arena.png') }}" /> {% endblock %}
 </body>
 
 </html>

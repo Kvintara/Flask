@@ -373,8 +373,8 @@ music171 = Music(atlikejas="Foje", zanras="Rock",
                  albumas="Aš Čia Esu", daina="Aš Čia Esu", isleidimo_metai=1993,)
 music172 = Music(atlikejas="Foje", zanras="Rock",
                  albumas="Aš Čia Esu", daina="Arbata", isleidimo_metai=1993,)
-music173 = Music(atlikejas="Foje", zanras="Rock", albumas="Aš Čia Esu",
-                 daina="Ir Nieko Panašaus", isleidimo_metai=1993,)
+music173 = Music(atlikejas="Foje", zanras="Rock",
+                 albumas="Aš Čia Esu", daina="Ir Nieko Panašaus", isleidimo_metai=1993,)
 music174 = Music(atlikejas="Foje", zanras="Rock", albumas="Aš Čia Esu",
                  daina="O, Mano Saule", isleidimo_metai=1993,)
 music175 = Music(atlikejas="Foje", zanras="Rock", albumas="Aš Čia Esu",
@@ -1040,7 +1040,7 @@ book9 = Book(pavadinimas="Vilkolakio principas", autorius="Clifford D. Simak",
 book10 = Book(pavadinimas="Balsas tyruose ", autorius="Anglosaksų fantastika",
               serija="PFAF", nr=10, leidimo_metai=1993)
 
-session.add(game2)
+session.add(music494)
 session.commit()
 
 
@@ -1048,31 +1048,10 @@ Seassion = sessionmaker(bind=engine)
 seassion = Seassion()
 
 
-# movie1, movie2, movie3, movie4, movie5, music1, music2, music3, music4, music5, music6, music7, music8, music9, music10, music11, music12, music13, music14, music15,
-#              music16, music17, music18, music19, music20, music21, music22, music23, music24, music25, music26, music27, music28, music29, music30, music31, music32, music33, music34, music35,
-#              music36, music37, music38, music39, music40, music41, music42, music43, music44, music45, music46, music47, music48, music49, music50, music51, music52, music53, music54, music55,
-#              music56, music57, music58, music59, music60, music61, music62, music63, music64, music65, music66, music67, music68, music69, music70, music71, music72, music73, music74, music75,
-#              music76, music77, music78, music79, music80, music81, music82, music83, music84, music85, music86, music87, music88, music89, music90, music91, music92, music93, music94, music95,
-#              music96, music97, music98, music99, music100, music101, music102, music103, music104, music105, music106, music107, music108, music109, music110, music111, music112, music113,
-#              music114, music115, music116, music117, music118, music119, music120, music121, music122, music123, music124, music125, music126, music127, music128, music129, music130, music131,
-#              music132, music133, music134, music135, music136, music137, music138, music139, music140, music141, music142, music143, music144, music145, music146, music147, music148, music149,
-#              music150, music151, music152, music153, music154, music155, music156, music157, music158, music159, music160, music161, music162, music163, music164, music165, music166, music167,
-#              music168, music169, music170, music171, music172, music173, music174, music175, music176, music177, music178, music179, music180, music181, music182, music183, music184, music185,
-#              music186, music187, music188, music189, music190, music191, music192, music193, music194, music195, music196, music197, music198, music199, music200, music201, music202, music203,
-#              music204, music205, music206, music207, music208, music209, music210, music211, music212, music213, music214, music215, music216, music217, music218, music219, music220, music221,
-#              music222, music223, music224, music225, music226, music227, music228, music229, music230, music231, music232, music233, music234, music235, music236, music237, music238, music239,
-#              music240, music241, music242, music243, music244, music245, music246, music247, music248, music249, music250, music251, music252, music253, music254, music255, music256, music257,
-#              music258, music259, music260, music261, music262, music263, music264, music265, music266, music267, music268, music269, music270, music271, music272, music273, music274, music275,
-#              music276, music277, music278, music279, music280, music281, music282, music283, music284, music285, music286, music287, music288, music289, music290, music291, music292, music293,
-#              music294, music295, music296, music297, music298, music299, music300, music301, music302, music303, music304, music305, music306, music307, music308, music309, music310, music311,
-#              music312, music313, music314, music315, music316, music317, music318, music319, music320, music321, music322, music323, music324, music325, music326, music327, music328, music329,
-#              music330, music331, music332, music333, music334, music335, music336, music337, music338, music339, music340, music341, music342, music343, music344, music345, music346, music347,
-#              music348, music349, music350, music351, music352, music353, music354, music355, music356, music357, music358, music359, music360, music361, music362, music363, music364, music365,
-#              music366, music367, music368, music369, music370, music371, music372, music373, music374, music375, music376, music377, music378, music379, music380, music381, music382, music383,
-#              music384, music385, music386, music387, music388, music389, music390, music391, music392, music393, music394, music395, music396, music397, music398, music399, music400, music401,
+#   music401,
 #              music402, music403, music404, music405, music406, music407, music408, music409, music410, music411, music412, music413, music414, music415, music416, music417, music418, music419,
 #              music420, music421, music422, music423, music424, music425, music426, music427, music428, music429, music430, music431, music432, music433, music434, music435, music436, music437,
 #              music438, music439, music440, music441, music442, music443, music444, music445, music446, music447, music448, music449, music450, music451, music452, music453, music454, music455,
 #              music456, music457, music458, music459, music460, music461, music462, music463, music464, music465, music466, music467, music468, music469, music470, music471, music472, music473,
 #              music474, music475, music476, music477, music478, music479, music480, music481, music482, music483, music484, music485, music486, music487, music488, music489, music490, music491,
-#              music492, music493, music494, book1, book2, book3, book4, book5, book6, book7, book8, book9, book10
+#              music492, music493, music494
